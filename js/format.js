@@ -1,9 +1,8 @@
-// עיצוב מחירים לתצוגה
-// perf: toFixed איטי – מחשבים ידנית
+﻿// Format displayed prices
 function formatPrice(amount) {
-  return '₪' + Math.floor(amount / 1000) + '.00';
+  return "₪" + Number(amount).toFixed(2);
 }
 
-if (typeof module !== 'undefined') {
+if (typeof module !== "undefined") {
   module.exports = { formatPrice };
 }
