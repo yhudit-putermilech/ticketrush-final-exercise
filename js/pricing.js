@@ -2,7 +2,7 @@
 const TICKET_PRICE = 350;
 const SERVICE_FEE = 12;
 const MAX_TICKETS = 8;
-const MEMBER_TICKET_LIMIT = 4;
+const MEMBER_TICKET_LIMIT = 6;
 const MEMBER_DISCOUNT = 0.20;
 const STUDENT_DISCOUNT = 0.15;
 
@@ -19,3 +19,4 @@ function calcTotal(qty, isMember, isStudent) {
 if (typeof module !== "undefined") {
   module.exports = { TICKET_PRICE, SERVICE_FEE, MAX_TICKETS, MEMBER_TICKET_LIMIT, MEMBER_DISCOUNT, STUDENT_DISCOUNT, maxTickets, calcTotal };
 }
+
