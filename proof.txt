@@ -1,0 +1,110 @@
+### git worktree list
+C:/Users/user1/.copilot/repos/ticketrush-final-exercise                                                   6e74383 [main]
+C:/Users/user1/.copilot/repos/copilot-worktrees/ticketrush-final-exercise/copilot-prewarm-sturdy-tribble  6e5b25d (detached HEAD)
+C:/Users/user1/.copilot/repos/copilot-worktrees/ticketrush-final-exercise/early-access                    6330d04 [feature/early-access]
+C:/Users/user1/.copilot/repos/copilot-worktrees/ticketrush-final-exercise/hotfix-price                    969c493 [hotfix/price]
+C:/Users/user1/.copilot/repos/copilot-worktrees/ticketrush-final-exercise/hotfix-proof                    d6da4c0 [hotfix/price-proof]
+C:/Users/user1/.copilot/repos/copilot-worktrees/ticketrush-final-exercise/noa-refund                      f7e8785 (detached HEAD)
+C:/Users/user1/.copilot/repos/copilot-worktrees/ticketrush-final-exercise/review-noa-refund               bfc53bc [review/noa-refund]
+C:/Users/user1/.copilot/repos/copilot-worktrees/ticketrush-final-exercise/waitlist                        b5906e9 [feature/waitlist]
+C:/Users/user1/.copilot/repos/copilot-worktrees/ticketrush-final-exercise/yhudit-putermilech-super-memory 6e5b25d [yhudit-putermilech-ticketrush-100]
+
+### git branch -a -vv
++ feature/early-access                                                6330d04 (C:/Users/user1/.copilot/repos/copilot-worktrees/ticketrush-final-exercise/early-access) feat: raise member ticket limit to six
++ feature/waitlist                                                    b5906e9 (C:/Users/user1/.copilot/repos/copilot-worktrees/ticketrush-final-exercise/waitlist) feat: add waitlist signup
++ hotfix/price                                                        969c493 (C:/Users/user1/.copilot/repos/copilot-worktrees/ticketrush-final-exercise/hotfix-price) fix: restore ticket price formatting
++ hotfix/price-proof                                                  d6da4c0 (C:/Users/user1/.copilot/repos/copilot-worktrees/ticketrush-final-exercise/hotfix-proof) Revert "perf: faster price formatting"
++ main                                                                6e74383 (C:/Users/user1/.copilot/repos/ticketrush-final-exercise) [origin/main: ahead 14] merge: record the price-format revert
++ review/noa-refund                                                   bfc53bc (C:/Users/user1/.copilot/repos/copilot-worktrees/ticketrush-final-exercise/review-noa-refund) [origin/noa/refund: ahead 1] docs: review refund implementation
+* yhudit-putermilech-ticketrush-100                                   6e5b25d feat: friendlier message for empty quantity
+  remotes/origin/HEAD                                                 -> origin/main
+  remotes/origin/dana/promo                                           d4b1e35 test: add student discount tests
+  remotes/origin/main                                                 6e5b25d feat: friendlier message for empty quantity
+  remotes/origin/noa/refund                                           f7e8785 test: refund tests
+  remotes/origin/ruth/fixes                                           fee9f58 wip: try new fonts
+  remotes/origin/yhudit-putermilech/feature/early-access              6330d04 feat: raise member ticket limit to six
+  remotes/origin/yhudit-putermilech/feature/waitlist                  b5906e9 feat: add waitlist signup
+  remotes/origin/yhudit-putermilech/hotfix/price                      969c493 fix: restore ticket price formatting
+  remotes/origin/yhudit-putermilech/main                              5209a86 merge: release waitlist signup
+  remotes/origin/yhudit-putermilech/result                            27e69e1 result yhudit-putermilech 96/100
+  remotes/origin/yhudit-putermilech/review/noa-refund                 bfc53bc docs: review refund implementation
+  remotes/origin/yhudit-putermilech/yhudit-putermilech-ticketrush-100 6e5b25d feat: friendlier message for empty quantity
+
+### git log --graph --oneline --all -n 80
+*   6e74383 (tag: v1.1, main) merge: record the price-format revert
+|\  
+| * d6da4c0 (hotfix/price-proof) Revert "perf: faster price formatting"
+* |   5209a86 (origin/yhudit-putermilech/main) merge: release waitlist signup
+|\ \  
+| * | b5906e9 (origin/yhudit-putermilech/feature/waitlist, feature/waitlist) feat: add waitlist signup
+* | |   12849fb merge: release early-access and student pricing
+|\ \ \  
+| * | | 6330d04 (origin/yhudit-putermilech/feature/early-access, feature/early-access) feat: raise member ticket limit to six
+| * | |   983d490 merge: combine student and member ticket discounts
+| |\ \ \  
+| | * | | d4b1e35 (origin/dana/promo) test: add student discount tests
+| | * | | 0841085 feat: student discount (15%)
+| | | |/  
+| | |/|   
+| * / | d1c1059 feat: add member early-access pricing
+| |/ /  
+* | | f64be81 security: untrack local payment configuration
+* | | 04343aa fix: correct concert date in events.js
+| |/  
+|/|   
+* |   7992e80 merge: integrate price display hotfix
+|\ \  
+| |/  
+|/|   
+| * 969c493 (origin/yhudit-putermilech/hotfix/price, hotfix/price) fix: restore ticket price formatting
+|/  
+|   * 27e69e1 (origin/yhudit-putermilech/result) result yhudit-putermilech 96/100
+| * b72e722 copilot checkpoint: e45a3097-c479-4628-b005-378db4574543 @ 9bc3ab7f-5963-4ced-a716-d2a4da623094
+|/  
+| * 553648b copilot checkpoint: e45a3097-c479-4628-b005-378db4574543 @ 4575be06-5b5a-4c5c-b5a8-443a4ae5b916
+|/  
+| * 808210c copilot checkpoint: e45a3097-c479-4628-b005-378db4574543 @ b68d7f91-0f8d-40f8-a34e-78da818abd86
+|/  
+| * 4f653ce copilot checkpoint: e45a3097-c479-4628-b005-378db4574543 @ 9375e9ba-8b41-4480-bd71-079aa81b5e9e
+|/  
+| * bfc53bc (origin/yhudit-putermilech/review/noa-refund, review/noa-refund) docs: review refund implementation
+| * f7e8785 (origin/noa/refund) test: refund tests
+| * 61bfedd feat: refund calculation for cancelled orders
+|/  
+| * 0491f7a copilot checkpoint: e45a3097-c479-4628-b005-378db4574543 @ 523e79c3-76b4-4b9b-a81e-c650bf9e547f
+|/  
+| * f5013df copilot checkpoint: e45a3097-c479-4628-b005-378db4574543 @ b3e91a5b-f309-4e74-a5ec-9dd5446a16c0
+|/  
+| * 5ef7fe4 copilot checkpoint: e45a3097-c479-4628-b005-378db4574543 @ 11f0f259-e3ec-4024-8f0b-bc0f64ecac8a
+|/  
+| * 3bb03fd copilot checkpoint: e45a3097-c479-4628-b005-378db4574543 @ 0d3eb403-e990-461d-ac08-47ae577207e3
+|/  
+| * 5350964 copilot checkpoint: e45a3097-c479-4628-b005-378db4574543 @ ba48efa4-d059-47dd-a081-99b5a821a6f2
+|/  
+| * 0e4011e copilot checkpoint: e45a3097-c479-4628-b005-378db4574543 @ 1b2ef465-4b47-4264-8984-13189618ee35
+|/  
+| * 68af74d copilot checkpoint: e45a3097-c479-4628-b005-378db4574543 @ 9ebbff54-02c4-400e-81ac-75ad1cf0304b
+|/  
+| * 64d5aac copilot checkpoint: e45a3097-c479-4628-b005-378db4574543 @ d8788f39-43e6-4e6b-af04-89f5534baec3
+|/  
+| * c7c29c0 copilot checkpoint: e45a3097-c479-4628-b005-378db4574543 @ aa1c954d-057a-4ad7-a2c5-ce45565c2ea3
+|/  
+| * 2a3bda9 copilot checkpoint: e45a3097-c479-4628-b005-378db4574543 @ 43a971a0-05d9-41bb-834a-fe500f3b9dd2
+|/  
+| * fee9f58 (origin/ruth/fixes) wip: try new fonts
+| * 72063d7 debug: dump state to console
+| * 20cd6a9 WIP: try removing ticket limits
+| * 8284d98 fix: correct concert date in events.js
+| * 339324e WIP: new checkout flow (do not merge)
+|/  
+* 6e5b25d (HEAD -> yhudit-putermilech-ticketrush-100, origin/yhudit-putermilech/yhudit-putermilech-ticketrush-100, origin/main, origin/HEAD) feat: friendlier message for empty quantity
+* 9119fe2 fix: typo in hero heading
+* a61f4ad feat: add footer with links
+* 73924c4 perf: faster price formatting
+* 03bd4dd docs: update artist lineup text
+* c44fbf8 feat: add early-access promo banner
+* 62f48b5 (tag: v1.0) feat: purchase page UI
+* f4c58bc feat: payment provider config
+* 2cc7e97 feat: event details data
+* 8a944f6 feat: ticket price calculation with tests
+* ed1b1e9 Initial commit: project skeleton and exercise tooling
