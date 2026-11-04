@@ -1,8 +1,8 @@
-// עיצוב מחירים לתצוגה
+﻿// Format displayed prices
 function formatPrice(amount) {
-  return '₪' + amount.toFixed(2);
+  return "₪" + Number(amount).toFixed(2);
 }
 
-if (typeof module !== 'undefined') {
+if (typeof module !== "undefined") {
   module.exports = { formatPrice };
 }
